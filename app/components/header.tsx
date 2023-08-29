@@ -25,6 +25,10 @@ export function Header() {
           <DropdownMenuItem itemText="Contact Us" />
           <StandaloneMenuItem itemText="Login" />
           <DropdownMenuItem itemText="Legal" />
+          <DropdownMenuItem itemText="Privacy" />
+          <StandaloneMenuItem itemText="Padding" />
+          <StandaloneMenuItem itemText="Margin" />
+          <DropdownMenuItem itemText="Border" />
         </NavigationMenuList>
       </NavigationMenu>
     </header>
