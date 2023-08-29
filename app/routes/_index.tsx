@@ -12,6 +12,21 @@ export default function Index() {
   return (
     <>
       <Header />
+      <div className="flex justify-center items-center h-screen">
+        <h2>
+          This is a demo for github{" "}
+          <a
+            href="https://github.com/shadcn-ui/ui/issues/172"
+            className="underline"
+          >
+            issue #172
+          </a>
+          <p>
+            Please hover your mouse over the navbar and confirm that the
+            dropdown does not appear below it's relevant item
+          </p>
+        </h2>
+      </div>
     </>
   );
 }
