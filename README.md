@@ -1,6 +1,6 @@
 # Bug demo
 
-Github issue - https://github.com/shadcn-ui/ui/issues/172
+Github issue - https://github.com/shadcn-ui/ui/issues/172 and https://github.com/shadcn-ui/ui/issues/418
 
 ## Steps to reproduce
 
