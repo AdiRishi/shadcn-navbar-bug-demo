@@ -37,22 +37,24 @@ export function Header() {
 
 function DropdownMenuItem({ itemText }: { itemText: string }) {
   return (
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>{itemText}</NavigationMenuTrigger>
-      <NavigationMenuContent>
-        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-          {DROPDOWN_ITEM_DATA.map((component) => (
-            <ListItem
-              key={`${itemText}${component.title}`}
-              title={component.title}
-              href={component.href}
-            >
-              {component.description}
-            </ListItem>
-          ))}
-        </ul>
-      </NavigationMenuContent>
-    </NavigationMenuItem>
+    <NavigationMenu>
+      <NavigationMenuItem>
+        <NavigationMenuTrigger>{itemText}</NavigationMenuTrigger>
+        <NavigationMenuContent>
+          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            {DROPDOWN_ITEM_DATA.map((component) => (
+              <ListItem
+                key={`${itemText}${component.title}`}
+                title={component.title}
+                href={component.href}
+              >
+                {component.description}
+              </ListItem>
+            ))}
+          </ul>
+        </NavigationMenuContent>
+      </NavigationMenuItem>
+    </NavigationMenu>
   );
 }
 
